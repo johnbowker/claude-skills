@@ -20,4 +20,6 @@ jobs:
           node-version: '20'
 
       - name: Validate skill format
-        run: node scripts/validate-skills.js
+        run: |
+          ls -la skills/ | head -5
+          node scripts/validate-skills.js
